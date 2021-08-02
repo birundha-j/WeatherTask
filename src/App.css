@@ -1,38 +1,445 @@
 .App {
   text-align: center;
+  margin: 2px;
+}
+ /* header */
+
+.header{
+  height: 60px;
+  background-image: linear-gradient(to right, #000000, #190e15, #231828, #25243f, #133357);
+  color: #ffff;
+  padding: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header div:first-child{
+  font-weight: 100;
+  font-size: 15px;
+  margin: 5px 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header div:last-child{
+  font-size: 15px;
+  font-weight: 600;
+  margin: 5px 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* headerMenus */
+
+.headerMenus{
+  height: 30px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.menuList{
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  margin: 5px;
+  font-size: 14px;
+  font-weight:500;
+}
+
+.menuList div{
+  margin: 0px 5px;
+}
+
+/* welcomeContent */
+
+.welcomeContent{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 15px 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.imageContent{
+  width: 30%;
+  padding: 20px 30px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.welcomeImage{
+  width: 380px;
+}
+
+.welcomeLines{
+  width: 30%;
+  text-align: start;
+  padding: 100px 30px 60px 13px;
+  margin: 5px;
+}
+
+.slogans{
+    font-weight: 600;
+    font-size: 39px;
+    margin: 8px 0px;
+}
+
+.statement{
+  font-size: 16px;
+  margin: 10px 0px;
+}
+
+.playTripbtn{
+  width: 127px;
+  padding: 11px;
+  text-align: center;
+  margin: 16px 0px;
+  background-image: linear-gradient(to right, #000000, #190e15, #231828, #25243f, #133357);
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 1197px) {
+  .welcomeImage {
+   width: 270px;
   }
-  to {
-    transform: rotate(360deg);
+  .slogans{
+    font-size: 28px;
+}
+.welcomeLines{
+  padding: 40px 30px 50px 13px;
+}
+}
+
+/* weatheChannel */
+
+.channelCotent{
+  display: flex;
+  justify-content: center;
+}
+
+.weatheChannel{
+  color: #fff;
+  width: 70%;
+  background: #133357;
+  padding: 16px 0px;
+  text-align: start;
+  font-weight: 500;
+}
+
+.weathershow{
+  padding-left: 15px;
+}
+
+/* showweatherData */
+
+.showweatherData0{
+  width: 25%;
+  background: #0D7E88;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.showweatherData1{
+  width: 25%;
+  background:  #D09378;
+  color: #fff;
+  padding: 10px;
+  text-align: center;;
+}
+
+.showweatherData2{
+  width: 25%;
+  background: #405B5D;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.showweatherData3{
+  width: 25%;
+  background:  #74A748;
+  color: #fff;
+  padding: 10px;
+  text-align: center;;
+}
+
+.weatherDetails{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.cityName{
+  font-weight: 600;
+  margin: 9px;
+}
+
+.cloudView{
+  width: 35px;
+  margin: 9px;
+}
+
+.temp_Celsius{
+font-size: 70px;
+}
+
+@media only screen and (max-width: 1160px) {
+  .temp_Celsius{
+    font-size: 40px;
+}
+.cloudView .cityName{
+  margin: 4px;
+}
+}
+
+/* destinationImagesContainer */
+
+.destinationTitle{
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 0px;
+  margin-left: 15%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #22383b;
+  font-weight: 600;
+}
+
+/* imageview */
+.countryShow{
+  width: 70%;
+    margin-left: 15.2%;
+    overflow: auto;
+    padding-left: 80px;
+}
+
+.countryShow::-webkit-scrollbar {
+  display: none;
   }
+
+.imageview{
+  width: 200px;
+  height: 180px;
+  margin: 6px;
+  border-radius: 13px 13px 13px 0px;
+  cursor: pointer;
+}
+
+.imageContainer{
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1350px) {
+  .imageview{
+    width: 150px;
+  height: 140px;
+
+}
+.countryShow{
+  padding-left: 10px;
+
+}
+}
+
+@media only screen and (max-width: 1220px) {
+  .imageview{
+    width: 130px;
+  height: 110px;
+
+}
+.countryShow{
+  padding-left: 50px;
+
+}
+
+.promoImage img{
+  width: 70%;
+  height: 450px;
+}
+}
+
+.countryName{
+  color: gray;
+  text-align: start;
+  margin: 8px;
+}
+
+.promoImage{
+ margin:25px 0px;
+}
+
+.promoImage img{
+  width: 85%;
+  height: 600px;
+}
+
+.promoinsde{
+  width: 26%;
+  text-align: start;
+  position: relative;
+  bottom: 194px;
+  left: 230px;
+}
+
+.promoTitle{
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.promoSatetement{
+  color: #fff;
+  font-size: 27px;
+  font-weight: 600;
+  margin: 5px 0px;
+  font-family: sans-serif;
+}
+
+@media only screen and (max-width: 1100px) {
+.promoImage img{
+  width: 74%;
+  height: 400px;
+}
+.promoinsde{
+  width: 17%;
+  position: relative;
+  bottom: 115px;
+  left: 200px;
+}
+.promoTitle{
+  font-size: 26px;
+}
+.promoSatetement{
+  font-size: 14px;
+}
+.quotesTitle{
+  font-size: 20px;
+}
+}
+
+@media only screen and (max-width: 900px) {
+  .promoinsde{
+    width: 26%;
+    position: relative;
+    bottom: 106px;
+    left: 129px;
+  }
+  .quotesTitle{
+    font-size: 13px;
+  }
+  }
+
+  .inputContainer{
+    width: 30%;
+    text-align: center;
+  }
+
+  .quotesTitle{
+    font-size: 26px;
+    font-weight: 600;
+    color: #133357;
+    margin-bottom: 40px;
+  }
+
+  .inputMainContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 96px;
+  }
+
+  .inputrow{
+    text-align: start;
+  }
+
+  .labelView{
+    color: rgb(190, 188, 188);
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .inputField{
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(184, 181, 181);
+    border-radius: 3px;
+    margin: 8px 0px 20px 0px;
+  }
+
+  .submitBtn{
+    width: 35%;
+    padding: 14px;
+    text-align: center;
+    margin: 16px 0px;
+    background-image: linear-gradient(to right, #000000, #190e15, #231828, #25243f, #133357);
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .footer{
+    width: 93%;
+    border:  1px solid;
+    background-image: linear-gradient(to right, #000000, #190e15, #231828, #25243f, #133357);
+    padding: 30px 40px;
+    margin: 10px;
+    display: flex;
+    color: #fff;
+    justify-content: space-around;
+  }
+
+  .footerHeading{
+    font-size: 24px;
+    margin: 20px 0px;
+
+  }
+
+  .footerdatas{
+    font-size: 18px;
+    margin: 10px 0px;
+  }
+
+  .footer div{
+    text-align: start;
+  }
+
+/* validation */
+
+.email-input {
+  width: 300px;
+  padding: 5px 10px;
+}
+
+.errormsg {
+  color: red;
+    font-size: 14px;
+    text-align: initial;
+}
+
+input:focus
+{
+    border: 1px solid #1670BE;
+    box-shadow: 0 0 3px #1670BE;
+    outline-offset: 0px;
+    outline: none;
+}
+
+.inputboxvalid{
+  width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    margin: 8px 0px 10px 0px;
+  border:1px solid red;
+}
+
+.errorMessege{
+  font-size: 12px;
+  color: red;
+  padding: 3px;
+}
+
+.successmsg{
+  font-size: 17px;
+  color: #133357;
 }
